@@ -8,7 +8,7 @@ const noValueProps: any = {
   rotate: "0",
   skew: "0",
   scale: "1,1",
-  opacity: "1",
+  // opacity: "1",
   "stroke-width": "1",
   "d": "M 0 0"
 };

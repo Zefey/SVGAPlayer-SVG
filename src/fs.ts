@@ -5,7 +5,7 @@ import * as fs from "fs"
 export const transformFile = async (fsPath: string): Promise<string> => {
     const source = await Parser.load(fsPath)
     const generator = new Generator(source, {
-        backgroundColor: "black",
+        backgroundColor: "transparent",
         // loopCount: 2,
         // fillMode: "clear",
     })
@@ -13,6 +13,6 @@ export const transformFile = async (fsPath: string): Promise<string> => {
     return generator.toString()
 }
 
-transformFile("samples/rose.svga").then((result) => {
-    fs.writeFileSync("samples/rose.svg", result)
+transformFile("samples/gift2.svga").then((result) => {
+    fs.writeFileSync("samples/gift2.svg", result)
 })
